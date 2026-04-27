@@ -1,0 +1,6 @@
+- name: get the vsriables from files 
+  hosts: web
+  tasks: 
+  - name: print the varibles from file 
+    ansible.builtin.debug: 
+      msg: "Course name is {{ COURSE }}, trainer name is {{ TRAINER }}, durarion is {{ DURATION }}"
