@@ -1,7 +1,7 @@
 - name: get the vsriables from files 
   hosts: local 
   vars_files:
-    - course-file.yaml 
+    - course-vars.yaml 
   tasks: 
   - name: print the varibles from file 
     ansible.builtin.debug: 
