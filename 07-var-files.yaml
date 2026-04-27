@@ -1,6 +1,6 @@
 - name: get the vsriables from files 
   hosts: local 
-  become: yes
+  connection: local
   vars_files:
     - course-vars.yaml 
   tasks: 
