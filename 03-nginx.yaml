@@ -1,0 +1,14 @@
+- name: nginx playbook
+  hosts: web 
+  become: yes
+  tasks: 
+  - name: install and run the nginx 
+    ansible.builtin.package: 
+      name: nginx 
+      state: installed 
+  - name: run the nginx 
+    ansible.builtin.service: 
+      name: nginx 
+      state: started 
+      
+     
